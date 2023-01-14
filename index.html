@@ -1,68 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="Web site created using CloudBase Webify">
-    <title>Hello Webify！</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-                sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        code {
-            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-                monospace;
-        }
-        .App {
-            text-align: center;
-        }
-
-        .App-logo {
-            height: 40vmin;
-            pointer-events: none;
-        }
-
-        @media (prefers-reduced-motion: no-preference) {
-            .App-logo {
-                animation: App-logo-spin infinite 20s linear;
-            }
-        }
-
-        .App-header {
-            background-color: #efefef;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-size: calc(10px + 2vmin);
-            color: black;
-        }
-
-        .App-link {
-            color: #108ee9;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="root">
-        <div class="App">
-            <header class="App-header">
-                <img src="https://main.qcloudimg.com/raw/2f3b21706c37e8685efe5c60b26ceb24.png" class="App-logo" alt="logo">
-                <p>Welcome to Webify！</p>
-                <a class="App-link" href="https://webify.cloudbase.net/"
-                    target="_blank" rel="noopener noreferrer">webify.cloudbase.net</a>
-            </header>
-        </div>
-    </div>
-</body>
-
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- 给IE浏览器WIN10准备的 -->
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=0.5"> -->
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<!--viewport 设备的视口   initial-scale=1 手机端 缩放的吧倍数 -->
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<div class="bg">
+			<div class="title">出院记录</div>
+			<div class="tline"></div>
+			<div class="adm">
+				<div class="dia-title">入院情况(简要病史，体格检查及主要辅助检查)：</div>
+				<div class="dia-text">患者因腰痛3天入院。入院后完善相关检查：脊柱腰段可触及明显压痛及叩击痛，腰椎活动稍受限。
+				四肢外观未见明显外伤、畸形，各处未触及明显压痛，各关节可自主活动。四肢感觉、肌力肌张力正常。腱反射正常引出，病理征未引出。</div>
+				<div class="dia-title">入院诊断：</div>
+				<div class="dia-text">
+					<ul>
+						<li>1.骨质疏松伴有病理性骨折(L2椎体骨质疏松伴病理性骨折)(主诊断)</li>
+						<li>2.腰骶椎间盘突出（L4/5、L5/S1腰椎间盘突出)</li>
+						<li>3.脊柱侧弯（退行性脊柱侧弯）</li>
+						<li>4.高血压</li>
+						<li>5.窦性心动过速</li>
+					</ul>
+				</div>
+				<div class="dia-title">诊疗经过：</div>
+				<div class="dia-text">入院后完善相关检查：</div>
+				<table>
+					<thead>
+						<tr>
+							<th colspan="2" >检查项目</th>
+							<th colspan="4">检查结果</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="2" colspan="2" >CT</td>
+							<td colspan="4">1.双肺炎症，建议治疗后复查；</td>
+						</tr>
+						<tr>
+							<td colspan="4">2.主动脉硬化;升主动脉增宽;心包稍肥厚。</td>
+						</tr>
+						<tr>
+							<td colspan="2" >心脏彩超</td>
+							<td colspan="4">轻度主动脉瓣反流，左室舒张功能减低。</td>
+						</tr>
+						<tr>
+							<td rowspan="2" colspan="2" >下肢血管彩超</td>
+							<td colspan="4">1.双侧下动脉粥样硬化斑块形成；</td>
+						</tr>
+						<tr>
+							<td colspan="4">2.余上述下肢血管未见明显异常。</td>
+						</tr>
+						<tr>
+							<td rowspan="2" colspan="2" >心电图</td>
+							<td colspan="4">1.窦性心律；</td>
+						</tr>
+						<tr>
+							<td colspan="4">2.ST-T改变请结合临床。</td>
+						</tr>
+						<tr>
+							<td rowspan="3" colspan="2" >腰椎MRI</td>
+							<td colspan="4">1.腰2椎体压缩性骨折(偏陈旧)，请结合临床；</td>
+						</tr>
+						<tr>
+							<td colspan="4">2.腰椎4/5椎间盘膨出，腰5/骶1椎间盘向左突出；腰4/5、腰5/骶1椎间盘变性；腰椎及椎间盘退行性改变。</td>
+						</tr>
+						<tr>
+							<td colspan="4">3.胸12椎体上缘许莫氏结节形成。</td>
+						</tr>
+						<tr>
+							<td colspan="2" >骨密度</td>
+							<td colspan="4">T值-4.5</td>
+						</tr>
+						<tr>
+							<td colspan="2" >肺功能</td>
+							<td colspan="4">中度阻塞轻度限制性通气功能障碍。</td>
+						</tr>
+						<tr>
+							<td colspan="6" >在局麻下行经皮椎体成形术，术后行抗骨质疏松、对症支持治疗。</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="dia-title">出院时情况：</div>
+				<div class="dia-text">患者腰痛较前明显好转，术口无红肿及异常</div>
+				<div class="dia-title">出院医嘱：</div>
+				<table>
+					<thead>
+						<tr>
+							<th colspan="3" >项目</th>
+							<th colspan="3">事项</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="5" colspan="3" >1.出院健康指导及注意事项：</td>
+							<td colspan="3">1.继续行抗骨质疏松治疗，</td>
+						</tr>
+						<tr>
+							<td colspan="3">2.注意休息加强营养。</td>
+						</tr>
+						<tr>
+							<td colspan="3">3.佩戴腰围3月。</td>
+						</tr>
+						<tr>
+							<td colspan="3">4.半年后返院复查。</td>
+						</tr>
+						<tr>
+							<td colspan="3">5.随诊。</td>
+						</tr>
+						<tr>
+							<td colspan="3" >饮食指导：</td>
+							<td colspan="3">低盐低脂饮食</td>
+						</tr>
+						<tr>
+							<td colspan="3" >饮食情况：</td>
+							<td colspan="3">一般</td>
+						</tr>
+						<tr>
+							<td colspan="3" >2、出院药物治疗：</td>
+							<td colspan="3">中药使用类别：未使用	</td>
+						</tr>
+						<tr>
+							<td colspan="3" >3、随访安排：</td>
+							<td colspan="3">随访周期建议：每3个月	</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		
+		
+		<script src="js/jquery-2.1.0.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/viewport.js"></script>
+	</body>
+	
 </html>
